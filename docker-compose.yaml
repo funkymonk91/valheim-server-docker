@@ -1,13 +1,14 @@
-version: "3.9"
-services: 
-  valheim: 
+version: '3.9'
+services:
+  valheim:
     image: lloesche/valheim-server
-    volumes: 
-      - /path/to/valheim/settings:/config
-      - /path/to/valheim/data:/opt/valheim
-    ports: 
-      - "2456-2458:2456-2458/udp" 
-    environment: 
-      - SERVER_NAME=Server Name
-      - SERVER_PASS=secret
+    volumes:
+      - E:\valheim-server\config:/config
+      - E:\valheim-server\data:/opt/valheim
+    ports:
+      - '2456-2458:2456-2458/udp'
+    environment:
+      - SERVER_NAME=Sons of Olaf
+      - SERVER_PASS=potato
       - SERVER_PUBLIC=1
+      - WORLD_NAME=VikingsHo
